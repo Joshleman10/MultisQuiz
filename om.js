@@ -97,7 +97,7 @@ window.onload = function () {
                         if (code === "dbbaa") {
                             aDiv.append("<h1>You are doing a great job.</h1>")
                             document.body.style.backgroundColor = "green";
-                            aDiv.append("<img src='ted.png'/>")
+                            aDiv.append("<img src='ted.PNG'/>")
                         }
                         else {
                             document.body.style.backgroundColor = "red";
