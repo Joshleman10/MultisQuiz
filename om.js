@@ -14,7 +14,7 @@ window.onload = function () {
     retryButton.hide();
     secret.hide();
 
-    //NO BRANTARDS ALLOWED
+    //NO BRANTARS ALLOWED
 
     let qna = [
         {
