@@ -3,9 +3,14 @@
 h1{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
+    font-weight: bold;
 }
-
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-weight: bold;
+}
 body{
     text-align: center;
 }
@@ -17,4 +22,8 @@ button{
 img{
     min-width: 350px;
     max-height: 600px;
+}
+
+#qDiv{
+    font-size: 20pt;
 }
