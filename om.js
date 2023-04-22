@@ -13,7 +13,7 @@ window.onload = function () {
 
     retryButton.hide();
     secret.hide();
-    // D, B, B, A, A
+
     let qna = [
         {
             "Q": {
