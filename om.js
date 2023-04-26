@@ -59,7 +59,7 @@ window.onload = function () {
             },
         }, {
             "Q": {
-                "Q": "Singles bin density over the last 4 weeks averaged 68.7.  Your team faced a bin density of 61.4 while utilizing 143 hours in singles pick.  How many more units would have been generated had the team landed at the 4wk average?",
+                "Q": "Singles bin density over the last 4 weeks averaged 68.7.  Your team faced a bin density of 61.4 while picking 286 total bins.  How many more units would have been generated had the team landed at the 4wk average?",
                 "A": [
                     "A : 1234 units",
                     "B : 1077 units",
