@@ -1,6 +1,5 @@
 window.onload = function () {
 
-
     let body = $('#mainBody');
     let startButton = $('#startQuiz');
     let retryButton = $('#retry')
@@ -11,63 +10,61 @@ window.onload = function () {
     let correct = 0;
     let incorrect = 0;
     let userAnswers = [];
+    let codeAns = [];
+    let replenData = "<img src='replenData.PNG'/>";
 
     retryButton.hide();
     secret.hide();
 
-    //NO BRANTARS ALLOWED
-
     let qna = [
         {
             "Q": {
-                "Q": "You came into an SOS backlog of 18,738 units.  You are projected to ship 25,162 units during your shift using 719 total labor hours and expecting an additional 17,814 units of charge during shift.  In a meeting prior to your shift, your Senior OM strokes his beard and asks you to ensure that you leave the next shift with at least 20,000 units in the backlog.  Assuming you achieve a target TPH of 35.0, what would be the best course of action, if any? ",
+                "Q": "Replen TPH has improved WOW for the last 4 weeks from 4.21 to 4.77 TPH due to an improved focus on zone compliance.  The last 4 weeks replen data looks as follows:<br>" + replenData + "<br>Which WOW performance showed the largest increase?",
                 "A": [
-                    "A : Full send with no VTO because TPH goal is always top priority",
-                    "B : Increase indirect HC to miss on TPH since preserving backlog is more of a priority",
-                    "C : VTO as many hours as possible to hand the highest backlog possible to the next shift",
-                    "D : VTO 25 TMs for the entire shift ",
-                    "E : VTO 20 TMs for the entire shift",
-                    "F : VTO 15 TMs for the entire"
+                    "A : Week 36 to week 37",
+                    "B : Week 37 to week 38",
+                    "C : Week 38 to week 39 ",
+                    "D : Week 39 to week 40"
                 ]
             },
         }, {
             "Q": {
-                "Q": "You are asked to provide an update on how many total hours will be utilized by the end of the shift with 4 hours until EOS.  The current HC is 72 with 7 TMs opting for EOA 2.5 hours prior to EOS.  The shift has currently logged a total of 623 hours until this point.  What is the best estimate for total hours at EOS?",
+                "Q": "The docks team finished the shift at 197 CPLH using 56 labor hours.  Assuming a maximum threshold of 250 CPLH, how many more units could the shift have produced with a shift TPH target of 36.5 at the maximum CPLH threshold?",
                 "A": [
-                    "A : 782 hours",
-                    "B : 894 hours ",
-                    "C : 882 hours",
-                    "D : 1012 hours"
+                    "A : 425 units",
+                    "B : 372 units",
+                    "C : 433 units ",
+                    "D : 684 units"
                 ]
             },
         }, {
             "Q": {
-                "Q": "You are a Singles AM.  The Singles Pack team finished the shift at a UPH of 82.3 vs a target of 90 UPH.  The shift spent a total of 183.2 hours in the singles pack function.  How many units were lost due to missing pack UPH target?",
+                "Q": "Your team ended the shift at an indirect % of 33.2% while utilizing 657 labor hours.  You have identified a miss on shift that could have placed 17 additional hours in direct paths.  What would the shifts indirect % have been had these labor hours been placed in direct paths?",
                 "A": [
-                    "A : 872 units",
-                    "B : 1410 units ",
-                    "C : 1189 units",
-                    "D : 1300 units"
+                    "A : 30.6% ",
+                    "B : 30.9%",
+                    "C : 29.8%",
+                    "D : 31.2%"
                 ]
             },
         }, {
             "Q": {
                 "Q": "The total planned hours for the shift per 21DP are 432.  The total indirect % goal for the shift is 31.0%.  How much impact would 1 TM unnecessarily placed in an indirect function for the full shift (10 hours) have on the shifts total indirect %?",
                 "A": [
-                    "A : Increase indirect % by 2.31% ",
-                    "B : Decrease indirect % by 1.80%",
-                    "C : Increase indirect % by 2.92%",
-                    "D : Increase indirect % by 0.92%"
+                    "A : 71 units ",
+                    "B : 153 units",
+                    "C : 98 units",
+                    "D : -38 units"
                 ]
             },
         }, {
             "Q": {
-                "Q": "The prior shift left a singles pack/stage required handoff of 1428 containers.  Your team is expected to leave a singles pack/stage required handoff of 1192 containers.  Assuming a singles UPC of 1.54 and your team leaves exactly what is expected for the next shift, about how many extra units will be able to be packed out without needing to be picked?",
+                "Q": "Singles bin density over the last 4 weeks averaged 68.7.  Your team faced a bin density of 61.4 while utilizing 143 hours in singles pick.  How many more units would have been generated had the team landed at the 4wk average?",
                 "A": [
-                    "A : 363 units ",
-                    "B : 402 units",
-                    "C : 292 units",
-                    "D : 352 units"
+                    "A : 1234 units",
+                    "B : 1077 units",
+                    "C : 1128 units",
+                    "D : 1044 units "
                 ]
             }
         }
@@ -76,7 +73,9 @@ window.onload = function () {
     aDiv.on('click', '#ans', function (e) {
         let userAns = e.target.innerHTML;
         let answer = e.target.value;
+        let letterOfAns = userAns.split("");
         answer === "c" ? correct++ : incorrect++;
+        answer === "c" ? codeAns.push(letterOfAns[0]) : "";
         userAnswers.push({ans: userAns, IorC: answer});
         qDiv.empty();
         aDiv.empty();
@@ -106,14 +105,15 @@ window.onload = function () {
                 $(document).keyup(function (event) {
                     if (event.which === 13) {
                         let code = secret.val().trim().toLowerCase();
+                        let userResponse = codeAns.join("").toLowerCase().toString()
                         secret.hide();
-                        if (code === "dbbaa") {
+                        if (code === userResponse) {
                             aDiv.append("<h1>You are doing a great job.</h1>")
-                            document.body.style.backgroundColor = "green";
-                            aDiv.append("<img src='ted.PNG'/>")
+                            document.body.style.backgroundColor = "lightgreen";
+                            aDiv.append("<img src='brantar.jpg'/>")
                         }
                         else {
-                            document.body.style.backgroundColor = "red";
+                            document.body.style.backgroundColor = "#ff6961";
                             aDiv.append("<h1>Incorrect code.  Please do better.</h1>")
                         }
                     }
