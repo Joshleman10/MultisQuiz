@@ -110,7 +110,7 @@ window.onload = function () {
                         if (code === userResponse) {
                             aDiv.append("<h1>You are doing a great job.</h1>")
                             document.body.style.backgroundColor = "lightgreen";
-                            aDiv.append("<img src='brantar.jpg'/>")
+                            aDiv.append("<img src='fred.JPG'/>")
                         }
                         else {
                             document.body.style.backgroundColor = "#ff6961";
