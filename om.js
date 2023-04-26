@@ -76,7 +76,7 @@ window.onload = function () {
         let letterOfAns = userAns.split("");
         answer === "c" ? correct++ : incorrect++;
         answer === "c" ? codeAns.push(letterOfAns[0]) : "";
-        userAnswers.push({ans: userAns, IorC: answer});
+        userAnswers.push({ ans: userAns, IorC: answer });
         qDiv.empty();
         aDiv.empty();
         loadQuestion();
@@ -87,12 +87,12 @@ window.onload = function () {
         aDiv.show();
         if (qCounter === 5) {
             aDiv.append('<h1 id="score">Your answers were:</h1>')
-            userAnswers.map(item=>{
-                if(item.IorC === "c"){
-                    aDiv.append('<h4 class="p-3 mb-2 bg-success text-white" id="answers"> '+ item.ans + '</h4>')
+            userAnswers.map(item => {
+                if (item.IorC === "c") {
+                    aDiv.append('<h4 class="p-3 mb-2 bg-success text-white" id="answers"> ' + item.ans + '</h4>')
                 }
-                else{
-                    aDiv.append('<h4 class="p-3 mb-2 bg-danger text-white" id="answers"> '+ item.ans + '</h4>')
+                else {
+                    aDiv.append('<h4 class="p-3 mb-2 bg-danger text-white" id="answers"> ' + item.ans + '</h4>')
                 }
             })
             retryButton.show();
@@ -105,7 +105,7 @@ window.onload = function () {
                 $(document).keyup(function (event) {
                     if (event.which === 13) {
                         let code = secret.val().trim().toLowerCase();
-                        let userResponse = codeAns.join("").toLowerCase().toString()
+                        let userResponse = codeAns.join("").toLowerCase().toString();
                         secret.hide();
                         if (code === userResponse) {
                             aDiv.append("<h1>You are doing a great job.</h1>")
@@ -119,7 +119,7 @@ window.onload = function () {
                     }
                 });
             }
-            else{
+            else {
                 aDiv.append("<h1>Not quite there...please try again!</h1>")
             }
         }
