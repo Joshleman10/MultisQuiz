@@ -49,7 +49,7 @@ window.onload = function () {
             },
         }, {
             "Q": {
-                "Q": "The total planned hours for the shift per 21DP are 432.  The total indirect % goal for the shift is 31.0%.  How much impact would 1 TM unnecessarily placed in an indirect function for the full shift (10 hours) have on the shifts total indirect %?",
+                "Q": "In the first quarter, the singles pack team reported a rate of 97.4 UPH with 8 packers.  You suggest that they move the only box-shopper into pack to produce additional pack volume and reduce indirect %.  In the 2nd quarter, the team reported a pack rate of 94.5 UPH with 9 packers.  What was the difference in units produced from the singles pack team from 1st to 2nd quarter?",
                 "A": [
                     "A : 71 units ",
                     "B : 153 units",
