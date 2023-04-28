@@ -64,7 +64,7 @@ window.onload = function () {
                     "A : 1234 units",
                     "B : 1077 units",
                     "C : 1128 units",
-                    "D : 1044 units "
+                    "D : 2088 units "
                 ]
             }
         }
