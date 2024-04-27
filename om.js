@@ -19,52 +19,52 @@ window.onload = function () {
     let qna = [
         {
             "Q": {
-                "Q": "Replen TPH has improved WOW for the last 4 weeks from 4.21 to 4.77 TPH due to an improved focus on zone compliance.  The last 4 weeks replen data looks as follows:<br>" + replenData + "<br>Which WOW performance showed the largest increase?",
+                "Q": "What is cart changeover time?",
                 "A": [
-                    "A : Week 36 to week 37",
-                    "B : Week 37 to week 38",
-                    "C : Week 38 to week 39 ",
-                    "D : Week 39 to week 40"
+                    "A : The time from the last transaction on one cart until the first transaction on the next cart. ",
+                    "B : The speed at which a TM is able to complete 1 container on a cart to the next container.",
+                    "C : The travel time between dropping a cart off in staging, to picking up a new cart in induction.",
+                    "D : The time of the last transaction prior to a break period, to the first transaction after break."
                 ]
             },
         }, {
             "Q": {
-                "Q": "The docks team finished the shift at 197 CPLH using 56 labor hours.  Assuming a maximum threshold of 250 CPLH, how many more units could the shift have produced with a shift TPH target of 36.5 at the maximum CPLH threshold?",
+                "Q": "Which one of the following could be considered an unsafe pass?",
                 "A": [
-                    "A : 425 units",
-                    "B : 372 units",
-                    "C : 433 units ",
-                    "D : 684 units"
+                    "A : Faith was standing in front of her movexx by 3 feet. Rich made eye contact with her and proceeded to pass.",
+                    "B : Faith was picking between her cart and racking. Rich declared he was passing and waited for Faith to stop picking, then proceeded to pass.",
+                    "C : Faith was standing on her Movexx talking to a fellow TM.  Rich declared he was passing and made eye contact, then proceeded to pass.",
+                    "D : Faith was standing 3 feet in front of her Movexx.  Rich declared he was about to pass.  Both made eye contact and Rich proceeded to pass. "
                 ]
             },
         }, {
             "Q": {
-                "Q": "Your team ended the shift at an indirect % of 33.2% while utilizing 657 labor hours.  You have identified a miss on shift that could have placed 17 additional hours in direct paths.  What would the shifts indirect % have been had these labor hours been placed in direct paths?",
+                "Q": "Jared is currently the most productive multis picker.  He is observed stepping over the Movexx platform to save time walking around his pick cart.  Which of the following is true?",
                 "A": [
-                    "A : 30.6% ",
-                    "B : 30.9%",
-                    "C : 29.8%",
-                    "D : 31.2%"
+                    "A : This is acceptable due to being more efficient.",
+                    "B : This is unsafe due to the potential for tripping over the platform. ",
+                    "C : If he stepped on the platform first, this considered a safe movement.",
+                    "D : If he is the most productive picker, this is ok."
                 ]
             },
         }, {
             "Q": {
-                "Q": "In the first quarter, the singles pack team reported a rate of 97.4 UPH with 8 packers.  You suggest that they move the only box-shopper into pack to produce additional pack volume and reduce indirect %.  In the 2nd quarter, the team reported a pack rate of 94.5 UPH with 9 packers.  What was the difference in units produced from the singles pack team from 1st to 2nd quarter?",
+                "Q": "Duane is picking singles on a center rider, while Faith is picking multis on a Movexx.  Faith is following behind Duane as they travel by one bay.  Which of the following is true?",
                 "A": [
-                    "A : 71 units ",
-                    "B : 153 units",
-                    "C : 98 units",
-                    "D : -38 units"
+                    "A : Because Movexx can pass PIT, this is safe.",
+                    "B : The 2 bay rule while traveling applies to all equipment ",
+                    "C : Movexx cannot pass PIT so this is not allowed.",
+                    "D : If there is traffic that exceeds 50 multis pickers, it is ok to follow within 1 bay."
                 ]
             },
         }, {
             "Q": {
-                "Q": "Singles bin density over the last 4 weeks averaged 68.7.  Your team faced a bin density of 61.4 while picking 286 total bins.  How many more units would have been generated had the team landed at the 4wk average?",
+                "Q": "Sergio is picking in multis using a scan gun instead of a wrist rocket.  As he is traveling, he is holding the scanner in one hand which is also on the steering tiller.  Which of the following is true?",
                 "A": [
-                    "A : 1234 units",
-                    "B : 1077 units",
-                    "C : 1128 units",
-                    "D : 2088 units "
+                    "A : This is considered 4 points of contact while operating.",
+                    "B : This is not considered 4 points of contact.",
+                    "C : TMs shoud always use wrist rocket while picking multis, if one is available.",
+                    "D : B and C "
                 ]
             }
         }
