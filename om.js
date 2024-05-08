@@ -19,12 +19,12 @@ window.onload = function () {
     let qna = [
         {
             "Q": {
-                "Q": "What is cart changeover time?",
+                "Q": "Ashley is looking for a movexx to operate and sees Randy drop his off in the parking area. Since Randy had already completed his equipment checklist this morning, Ashley sees no reason to complete one herself. Which of the following is true?",
                 "A": [
-                    "A : The time from the last transaction on one cart until the first transaction on the next cart. ",
-                    "B : The speed at which a TM is able to complete 1 container on a cart to the next container.",
-                    "C : The travel time between dropping a cart off in staging, to picking up a new cart in induction.",
-                    "D : The time of the last transaction prior to a break period, to the first transaction after break."
+                    "A : The equipment was already inspected by another Team Member, so it is safe for Ashley to operate the equipment.",
+                    "B : Each individual operator must complete an equipment checklist prior to operating equipment. ",
+                    "C : Movexx do not require an equipment checklist.",
+                    "D : Equipment checklists are completed by maintenance."
                 ]
             },
         }, {
@@ -49,7 +49,7 @@ window.onload = function () {
             },
         }, {
             "Q": {
-                "Q": "Duane is picking singles on a center rider, while Faith is picking multis on a Movexx.  Faith is following behind Duane as they travel by one bay.  Which of the following is true?",
+                "Q": "Duane is picking singles on a center rider, while Marielle is picking multis on a Movexx.  Marielle is following behind Duane by one bay as they travel.  Which of the following is true?",
                 "A": [
                     "A : Because Movexx can pass PIT, this is safe.",
                     "B : The 2 bay rule while traveling applies to all equipment ",
@@ -110,7 +110,7 @@ window.onload = function () {
                         if (code === userResponse) {
                             aDiv.append("<h1>You are doing a great job.</h1>")
                             document.body.style.backgroundColor = "lightgreen";
-                            aDiv.append("<img src='fred.jpg'/>")
+                            aDiv.append("<img src='faithCat.png'/>")
                         }
                         else {
                             document.body.style.backgroundColor = "#ff6961";
