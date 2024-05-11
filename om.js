@@ -29,7 +29,7 @@ window.onload = function () {
             },
         }, {
             "Q": {
-                "Q": "Which one of the following could be considered an unsafe pass?",
+                "Q": "Which one of the following could be considered a safe pass?",
                 "A": [
                     "A : Faith was standing in front of her movexx by 3 feet. Rich made eye contact with her and proceeded to pass.",
                     "B : Faith was picking between her cart and racking. Rich declared he was passing and waited for Faith to stop picking, then proceeded to pass.",
